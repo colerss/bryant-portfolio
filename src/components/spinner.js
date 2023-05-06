@@ -1,4 +1,4 @@
-import { Spinner } from "react-bootstrap";
+import { CircularProgress } from "@mui/material";
 
 export default function SuspenseSpinner() {
   const style = {
@@ -11,5 +11,5 @@ export default function SuspenseSpinner() {
     width: "6rem",
     height:"6rem"
   };
-  return <div><Spinner style={style}></Spinner></div>;
+  return <div><CircularProgress sx={style}></CircularProgress></div>;
 }

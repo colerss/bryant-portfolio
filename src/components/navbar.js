@@ -13,11 +13,13 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
-import Introduction from "./introduction";
-const pages = [{ name: "Bio", path: "/" }, { name: "Where I've Been", path: "/story" },{ name: "My Talents", path: "/talents" },{ name: "Internship", path: "/internship" }, { name: "Projects", path: "/projects" }];
+import { useTranslation } from "react-i18next";
+const pages = [{ name: "About Me", path: "/" }, { name: "Where I've Been", path: "/story" },{ name: "Skills", path: "/skills" },{ name: "Internship", path: "/internship" }, { name: "Projects", path: "/projects" }];
 
 export default function PortfolioNavbar() {
+  const {t, i18n} = useTranslation();
   const [anchorElNav, setAnchorElNav] = useState(null);
+  const title = "Portfolio"
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -25,7 +27,7 @@ export default function PortfolioNavbar() {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="sticky">
+    <AppBar position="sticky" >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
@@ -43,7 +45,7 @@ export default function PortfolioNavbar() {
               textDecoration: "none",
             }}
           >
-            BRYANT SUISKENS
+            {t(title)}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
@@ -75,10 +77,8 @@ export default function PortfolioNavbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page.name} onClick={handleCloseNavMenu}>
-                  <Link to={page.path}>
-                    <Typography textAlign="center">{page.name}</Typography>
-                  </Link>
+                <MenuItem containerElement={<Link to={page.path} />} key={page.name} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{t(page.name)}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -99,7 +99,7 @@ export default function PortfolioNavbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            {t(title)}
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
@@ -110,18 +110,17 @@ export default function PortfolioNavbar() {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: "white", display: "block" }}
               >
-                {page.name}
+                {t(page.name)}
               </Button>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <Button
-              variant="contained"
+            <IconButton
+              variant="outline"
               color="secondary"
-              startIcon={<LinkedInIcon />}
             >
-              Let's Connect!
-            </Button>
+              <LinkedInIcon></LinkedInIcon>
+            </IconButton>
           </Box>
         </Toolbar>
       </Container>
