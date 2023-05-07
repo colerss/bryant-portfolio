@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Avatar, Grid, Typography } from "@mui/material";
+import { Box, Container, Grid, Typography } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 export default function AboutMePage() {

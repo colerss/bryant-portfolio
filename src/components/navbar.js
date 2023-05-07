@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslation } from "react-i18next";
-const pages = [{ name: "About Me", path: "/" }, { name: "Where I've Been", path: "/story" },{ name: "Skills", path: "/skills" },{ name: "Internship", path: "/internship" }, { name: "Projects", path: "/projects" }];
+const pages = [{ name: "About Me", path: "/" }, { name: "Where I've Been", path: "/journey" },{ name: "Skills", path: "/skills" },{ name: "Internship", path: "/internship" }, { name: "Projects", path: "/projects" }];
 
 export default function PortfolioNavbar() {
   const {t, i18n} = useTranslation();
