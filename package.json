@@ -1,7 +1,7 @@
 {
   "name": "bryant-portfolio",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/bryant-portfolio",
+  "homepage": "https://colerss.github.io/bryant-portfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.6",
