@@ -46,157 +46,72 @@ export default function SkillsPage() {
                 title={"Javascript React"}
                 skillLevel={"Specialization"}
               >
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("React Experience")}
               </SkillEntry>
               <SkillEntry
                 title={".NET development in C#"}
                 skillLevel={"Former Specialization"}
               >
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("DotNet Experience")}
               </SkillEntry>
               <SkillEntry title={"SQLDb Management"} skillLevel={"Experienced"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("SQLDb Experience")}
               </SkillEntry>
               <SkillEntry title={"Java"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Java Experience")}
               </SkillEntry>
               <SkillEntry title={"Angular"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Angular Experience")}
               </SkillEntry>
               <SkillEntry title={"Python"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("Python Experience")}
               </SkillEntry>
               <SkillEntry title={"Php"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+              {t("PHP Experience")}
               </SkillEntry>
               <SkillEntry title={"Vue"} skillLevel={"Beginner"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("Vue Experience")}
               </SkillEntry>
               <SkillEntry title={"Dart with Flutter"} skillLevel={"Beginner"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+              {t("Dart Experience")}
               </SkillEntry>
               <SkillEntry
                 title={".Net development in VB"}
                 skillLevel={"Deprecated"}
               >
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("VB Experience")}
               </SkillEntry>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <SkillEntry title={"IoT development"} skillLevel={"Experienced"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("IOT Experience")}
               </SkillEntry>
               <SkillEntry title={"Git"} skillLevel={"Experienced"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("Git Experience")}
               </SkillEntry>
               <SkillEntry title={"Salesforce"} skillLevel={"Experienced"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("SalesForce Experience")}
               </SkillEntry>
               <SkillEntry title={"Cisco Networks"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Cisco Experience")}
               </SkillEntry>
               <SkillEntry title={"AI Programming"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("AI Experience")}
               </SkillEntry>
               <SkillEntry title={"DevOps"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("DevOps Experience")}
               </SkillEntry>
               <SkillEntry title={"Itil"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+               {t("ITIL Experience")}
               </SkillEntry>
-
-              <SkillEntry title={"SAP"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+              <SkillEntry title={"Electronics"} skillLevel={"Moderate"}>
+              {t("Electronics Experience")}
+              </SkillEntry>
+              <SkillEntry title={"SAP"} skillLevel={"Beginner"}>
+               {t("SAP Experience")}
+              </SkillEntry>
+              <SkillEntry title={"Drupal"} skillLevel={"Beginner"}>
+                {t("Drupal Experience")}
               </SkillEntry>
             </TabPanel>
             <TabPanel value={value} index={2}>
@@ -204,36 +119,16 @@ export default function SkillsPage() {
                 title={"Project Management"}
                 skillLevel={"Experienced"}
               >
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Project Management Experience")}
               </SkillEntry>
               <SkillEntry title={"Agile Management"} skillLevel={"Experienced"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Agile Experience")}
               </SkillEntry>
               <SkillEntry title={"Conversation Skills"} skillLevel={"Moderate"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Conversation Experience")}
               </SkillEntry>
               <SkillEntry title={"Training"} skillLevel={"Beginner"}>
-                Minim nulla id consequat duis elit. Ut elit ipsum ipsum culpa
-                ipsum excepteur. Reprehenderit cupidatat commodo occaecat non
-                nostrud incididunt proident amet minim laboris dolore dolore. Ea
-                ipsum consectetur duis sit eiusmod Lorem ad pariatur eu irure
-                irure aute nulla est. Magna enim ad id nisi tempor est
-                exercitation consectetur.
+                {t("Training Experience")}
               </SkillEntry>
             </TabPanel>
           </Box>

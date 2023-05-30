@@ -51,11 +51,7 @@ export default function AboutMePage() {
                 </Typography>
                 <br />
                 <Typography>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
+                  {t("Biography")}
                 </Typography>
               </Grid>
               <Grid item xs={12}>
@@ -74,18 +70,7 @@ export default function AboutMePage() {
                   {t("My Hobbies")}
                 </Typography>
                 <Typography>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
-                </Typography>
-                <Typography>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Maxime mollitia, molestiae quas vel sint commodi repudiandae
-                  consequuntur voluptatum laborum numquam blanditiis harum
-                  quisquam eius sed odit fugiat iusto fuga praesentium optio,
-                  eaque rerum! Provident similique accusantium nemo autem.
+                  {t("About My Hobbies")}
                 </Typography>
               </Grid>
             </Grid>
