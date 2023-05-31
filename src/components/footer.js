@@ -23,10 +23,11 @@ export default function Footer() {
           alignItems: "center",
         }}
       >
-        <Typography color="text.primary">
-        <div style={{ fontSize: "0.5rem"}}>
-          &#169; 2023 Portfolio Bryant Suiskens
-        </div></Typography>
+        <div>
+          <Typography color="text.primary" fontSize={"0.5rem"}>
+            &#169; 2023 Portfolio Bryant Suiskens
+          </Typography>
+        </div>
         <LanguageSelector />
       </Container>
     </Box>

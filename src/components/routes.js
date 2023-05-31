@@ -10,12 +10,13 @@ const HomePage = lazy(()=> import("../views/home"));
 export default function AppRoutes(){
         return (
             <Routes>
-                <Route path="/home" element={<HomePage />} />
-                <Route path="/aboutme" element={<AboutMePage />}  />
-                <Route path="/journey" element={<JourneyPage />} />
-                <Route path="/projects" element={<ProjectsPage />} />
-                <Route path="/skills" element={<SkillsPage />}/>
-                <Route path="/internship" element={<InternshipPage/>} />
+                <Route path="/" exact element={<HomePage />} />
+                <Route path="/bryant-portfolio/" exact element={<HomePage />} />
+                <Route path="/bryant-portfolio/aboutme" element={<AboutMePage />}  />
+                <Route path="/bryant-portfolio/journey" element={<JourneyPage />} />
+                <Route path="/bryant-portfolio/projects" element={<ProjectsPage />} />
+                <Route path="/bryant-portfolio/skills" element={<SkillsPage />}/>
+                <Route path="/bryant-portfolio/internship" element={<InternshipPage/>} />
             </Routes>
         )
 

@@ -35,7 +35,7 @@ export default function AboutMePage() {
               </Grid>
               <Grid item xs={3}>
                 <img
-                  src="\images\profile.jpg"
+                  src="./images/profile.jpg"
                   alt="Bryant Suiskens"
                   style={{
                     borderRadius: "0%",

@@ -14,12 +14,19 @@ import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslation } from "react-i18next";
-const pages = [{ name: "About Me", path: "/" }, { name: "Where I've Been", path: "/journey" },{ name: "Skills", path: "/skills" },{ name: "Internship", path: "/internship" }, { name: "Projects", path: "/projects" }];
+
+const pages = [
+  { name: "About Me", path: "/bryant-portfolio/aboutme" },
+  { name: "Where I've Been", path: "/bryant-portfolio/journey" },
+  { name: "Skills", path: "/bryant-portfolio/skills" },
+  { name: "Internship", path: "/bryant-portfolio/internship" },
+  { name: "Projects", path: "/bryant-portfolio/projects" },
+];
 
 export default function PortfolioNavbar() {
-  const {t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const title = "Portfolio"
+  const title = "Portfolio";
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
@@ -27,14 +34,14 @@ export default function PortfolioNavbar() {
     setAnchorElNav(null);
   };
   return (
-    <AppBar position="sticky" >
+    <AppBar position="sticky">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
             component="a"
-            href="/"
+            href={"/bryant-portfolio/"}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -77,8 +84,12 @@ export default function PortfolioNavbar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem containerElement={<Link to={page.path} />} key={page.name} onClick={handleCloseNavMenu}>
-                    <Typography textAlign="center">{t(page.name)}</Typography>
+                <MenuItem
+                  containerelement={<Link to={page.path} />}
+                  key={page.name}
+                  onClick={handleCloseNavMenu}
+                >
+                  <Typography textAlign="center">{t(page.name)}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -115,10 +126,7 @@ export default function PortfolioNavbar() {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <IconButton
-              variant="outline"
-              color="secondary"
-            >
+            <IconButton variant="outline" color="secondary">
               <LinkedInIcon></LinkedInIcon>
             </IconButton>
           </Box>
