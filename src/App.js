@@ -19,6 +19,7 @@ function App() {
       },
       background: {
         default: "#C0C8CF",
+        contrasted: "#2196f3"
       },
       text: {
         primary: "#f5f5f5",
@@ -29,7 +30,7 @@ function App() {
       <ThemeProvider theme={mainTheme}>
         <div
           style={{
-            backgroundColor: mainTheme.palette.background.default,
+            backgroundColor: mainTheme.palette.background.contrasted,
             display: "flex",
             flexDirection: "column",
             minHeight: "100vh",

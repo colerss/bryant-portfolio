@@ -40,8 +40,8 @@ export default function PortfolioNavbar() {
           <Typography
             variant="h6"
             noWrap
-            component="a"
-            href={"/bryant-portfolio/"}
+            component={Link}
+            to={"/bryant-portfolio/"}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
