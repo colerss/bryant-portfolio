@@ -77,6 +77,7 @@ export default function AboutMePage() {
                   link="./downloads/Bryant Suiskens CV 06-23.pdf"
                   fileName="My CV"
                   downloadName="cvbryantsuiskens"
+                  isPdf
                 />
               </Grid>
               <Grid item xs={12}>
@@ -96,7 +97,7 @@ export default function AboutMePage() {
                 </Typography>
                 <div style={{ textAlign: "center", marginTop: "1rem" }}>
                   <Typography variant="h6">Bryant Suiskens</Typography>
-                  <Typography>Phone: 04 92 72 41 63</Typography>
+                  <Typography>{t("Phone")}: 04 92 72 41 63</Typography>
                   <Typography>Email: bryantsuiskens@gmail.com</Typography>
                   <IconButton
                     component="a"

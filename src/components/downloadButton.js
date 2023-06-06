@@ -1,14 +1,20 @@
 import React from "react";
 import { Button, Typography, Box } from "@mui/material";
 
-const DownloadButton = ({ fileType, link, fileName, downloadName }) => {
+const DownloadButton = ({ fileType, link, fileName, downloadName, isPdf = false}) => {
+  const handleClick = () => {
+    if (isPdf) {
+      window.open(link, "_blank");
+    }
+  };
   return (
     <Button
       variant="contained"
       color="primary"
       component="a"
-      href={link}
-      download={downloadName}
+      onClick={handleClick}
+      href={isPdf ? null : link}
+      download={isPdf ? null : downloadName}
       sx={{
         display: "inline-flex",
         alignItems: "center",

@@ -26,7 +26,7 @@ const pages = [
 export default function PortfolioNavbar() {
   const { t, i18n } = useTranslation();
   const [anchorElNav, setAnchorElNav] = useState(null);
-  const title = "Portfolio";
+  const title = "Bryant Suiskens";
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };

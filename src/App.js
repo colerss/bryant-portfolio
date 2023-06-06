@@ -36,11 +36,11 @@ function App() {
           }}
         >
           <PortfolioNavbar />
-          <div style={{ flex: 1 }}>
+
             <Suspense fallback={<SuspenseSpinner />}>
               <AppRoutes />
             </Suspense>
-          </div>
+
           <Footer />
         </div>
       </ThemeProvider>
