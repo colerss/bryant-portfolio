@@ -17,6 +17,7 @@ export default function AppRoutes() {
 
   return (
     <Routes>
+        <Route path="/bryant-portfolio/" exact  element={<HomePage />} />
       <Route path="/bryant-portfolio/home"  element={<HomePage />} />
       <Route path="/bryant-portfolio/aboutme" element={<AboutMePage />} />
       <Route path="/bryant-portfolio/journey" element={<JourneyPage />} />
