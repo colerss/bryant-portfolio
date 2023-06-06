@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Container, Tab, Tabs, Typography, Grid } from "@mui/material";
 import TabPanel from "../components/tabPanel";
 import { useTranslation } from "react-i18next";
-
+import TitleBox from "../components/titleBox";
 export default function InternshipPage() {
   const [value, setValue] = React.useState(0);
   const { t, i18n } = useTranslation();
@@ -14,21 +14,8 @@ export default function InternshipPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box sx={{ margin: "1rem", backgroundColor: "primary.light" }}>
-            <Typography
-              variant="h4"
-              noWrap
-              textAlign={"center"}
-              sx={{
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".2rem",
-                color: "inherit",
-                textDecoration: "underline",
-              }}
-            >
-              {t("Internships")}
-            </Typography>
+          <Box sx={{ margin: "1rem", backgroundColor: "primary.light",   padding: "1rem" }}>
+            <TitleBox title={"Internships"}></TitleBox>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 centered
@@ -41,7 +28,12 @@ export default function InternshipPage() {
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
-              Item One
+              <p>
+
+              </p>
+              <p>
+                
+              </p>
             </TabPanel>
             <TabPanel value={value} index={1}>
               Item Two

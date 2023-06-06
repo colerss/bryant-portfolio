@@ -3,6 +3,7 @@ import { Box, Container, Grid, Tab, Tabs, Typography } from "@mui/material";
 import TabPanel from "../components/tabPanel";
 import { useTranslation } from "react-i18next";
 import SkillEntry from "../components/skillEntry";
+import TitleBox from "../components/titleBox";
 export default function SkillsPage() {
   const [value, setValue] = React.useState(0);
   const { t, i18n } = useTranslation();
@@ -14,21 +15,8 @@ export default function SkillsPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box sx={{ margin: "1rem", backgroundColor: "primary.light" }}>
-            <Typography
-              variant="h4"
-              noWrap
-              textAlign={"center"}
-              sx={{
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".2rem",
-                color: "inherit",
-                textDecoration: "underline",
-              }}
-            >
-              {t("My Skills")}
-            </Typography>
+          <Box sx={{ margin: "1rem", backgroundColor: "primary.light",   padding: "1rem" }}>
+            <TitleBox title={"My Skills"}></TitleBox>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 centered
@@ -70,7 +58,7 @@ export default function SkillsPage() {
               {t("PHP Experience")}
               </SkillEntry>
               <SkillEntry title={"Vue"} skillLevel={"Beginner"}>
-               {t("Vue Experience")}
+               {t("Vue Experience")} <a href=" https://openclassrooms.com/en/courses/5664336-create-a-web-application-with-vue-js">Course</a>
               </SkillEntry>
               <SkillEntry title={"Dart with Flutter"} skillLevel={"Beginner"}>
               {t("Dart Experience")}

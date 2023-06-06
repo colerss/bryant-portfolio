@@ -3,6 +3,7 @@ import { Box, Container, Tab, Tabs, Typography, Grid } from "@mui/material";
 import TabPanel from "../components/tabPanel";
 import { useTranslation } from "react-i18next";
 import TimeEntry from "../components/timeEntry";
+import TitleBox from "../components/titleBox";
 export default function JourneyPage() {
   const [value, setValue] = React.useState(0);
   const { t, i18n } = useTranslation();
@@ -14,21 +15,8 @@ export default function JourneyPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box sx={{ margin: "1rem", backgroundColor: "primary.light" }}>
-            <Typography
-              variant="h4"
-              noWrap
-              textAlign={"center"}
-              sx={{
-                fontFamily: "monospace",
-                fontWeight: 700,
-                letterSpacing: ".2rem",
-                color: "inherit",
-                textDecoration: "underline",
-              }}
-            >
-              {t("Where I've Been")}
-            </Typography>
+          <Box sx={{ margin: "1rem", backgroundColor: "primary.light",   padding: "1rem" }}>
+            <TitleBox title={"Where I've Been"}></TitleBox>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 centered
@@ -111,8 +99,8 @@ export default function JourneyPage() {
                 title={"DRUPAL 10 & 9 TUTORIAL - Drupal Master Class"}
                 from={"January 2023"}
               >
-                https://www.udemy.com/certificate/UC-77afa11f-49a6-49b9-9744-e2e36e914e4c/
-                {t("Drupal Dev")}
+               
+                {t("Drupal Certificate")} <a href="https://www.udemy.com/certificate/UC-77afa11f-49a6-49b9-9744-e2e36e914e4c/">Official Certificate</a>
               </TimeEntry>
             </TabPanel>
           </Box>

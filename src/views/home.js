@@ -1,9 +1,7 @@
 import React from "react";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import { useTranslation } from "react-i18next";
-
+import TitleBox from "../components/titleBox";
 export default function HomePage() {
-  const { t, i18n } = useTranslation();
   return (
     <Container>
       <Grid container spacing={1}>
@@ -18,20 +16,7 @@ export default function HomePage() {
           >
             <Grid container spacing={2}>
               <Grid item xs={12}>
-                <Typography
-                  variant="h4"
-                  noWrap
-                  textAlign={"center"}
-                  sx={{
-                    fontFamily: "monospace",
-                    fontWeight: 700,
-                    letterSpacing: ".2rem",
-                    color: "inherit",
-                    textDecoration: "underline",
-                  }}
-                >
-                  {t("My Portfolio")}
-                </Typography>
+               <TitleBox title={"My Portfolio"}></TitleBox>
               </Grid>
             </Grid>
           </Box>

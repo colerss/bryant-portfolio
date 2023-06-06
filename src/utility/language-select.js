@@ -26,7 +26,7 @@ export default function LanguageSelector() {
 
   useEffect(() => {
     let language = i18n.language;
-    if (language.includes("nl")) {
+    if (language?.includes("nl")) {
       setRenderedLang(nlFlag);
     } else {
       setRenderedLang(enFlag);
