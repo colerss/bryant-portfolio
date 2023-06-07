@@ -5,6 +5,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import TitleBox from "../components/titleBox";
 import DownloadButton from "../components/downloadButton";
+import Subtitle from "../components/subtitle";
 export default function AboutMePage() {
   const { t, i18n } = useTranslation();
   return (
@@ -58,20 +59,7 @@ export default function AboutMePage() {
                 <Typography>{t("About My Hobbies")}</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography
-                  variant="h5"
-                  noWrap
-                  textAlign={"center"}
-                  sx={{
-                    fontFamily: "monospace",
-                    fontWeight: 700,
-                    letterSpacing: ".2rem",
-                    color: "inherit",
-                    textDecoration: "none",
-                  }}
-                >
-                  {t("Relevant Documents")}
-                </Typography>
+                <Subtitle> {t("Relevant Documents")}</Subtitle>
                 <DownloadButton
                   fileType=".pdf"
                   link="./downloads/Bryant Suiskens CV 06-23.pdf"
@@ -81,20 +69,7 @@ export default function AboutMePage() {
                 />
               </Grid>
               <Grid item xs={12}>
-                <Typography
-                  variant="h5"
-                  noWrap
-                  textAlign={"center"}
-                  sx={{
-                    fontFamily: "monospace",
-                    fontWeight: 700,
-                    letterSpacing: ".2rem",
-                    color: "inherit",
-                    textDecoration: "none",
-                  }}
-                >
-                  {t("Contact")}
-                </Typography>
+                <Subtitle>{t("Contact")}</Subtitle>
                 <div style={{ textAlign: "center", marginTop: "1rem" }}>
                   <Typography variant="h6">Bryant Suiskens</Typography>
                   <Typography>{t("Phone")}: 04 92 72 41 63</Typography>

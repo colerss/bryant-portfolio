@@ -3,16 +3,16 @@ import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
 import { Button, Menu, MenuItem } from "@mui/material";
 
-export default function LanguageSelector() {
+export default function StyleSelector() {
   const { t, i18n } = useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
-  const [selectedLang, setSelectedLang] = useState("");
-  const [renderedLang, setRenderedLang] = useState("");
+  const [selectedStyle, setSelectedStyle] = useState("");
+  const [renderedStyle, setRenderedStye] = useState("");
   const open = Boolean(anchorEl);
 
-  const changeLanguage = (lng) => {
+  const changeStyle = (lng) => {
     i18n.changeLanguage(lng);
-    setSelectedLang(lng);
+    setSelectedStyle(lng);
     handleClose();
   };
 
@@ -24,22 +24,6 @@ export default function LanguageSelector() {
     setAnchorEl(event.currentTarget);
   };
 
-  useEffect(() => {
-    if (selectedLang) {
-      if (selectedLang.includes("nl")) {
-        setRenderedLang(nlFlag);
-      } else {
-        setRenderedLang(enFlag);
-      }
-    }
-    else{
-      if (i18n.language.includes("nl")) {
-        setRenderedLang(nlFlag);
-      } else {
-        setRenderedLang(enFlag);
-      }
-    }
-  }, [selectedLang]);
 
   const enFlag = (
     <Flag
@@ -67,7 +51,7 @@ export default function LanguageSelector() {
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
       >
-        {renderedLang}
+        {renderedStyle}
       </Button>
       <Menu
         id="demo-positioned-menu"
@@ -84,8 +68,8 @@ export default function LanguageSelector() {
           horizontal: "left",
         }}
       >
-        <MenuItem onClick={() => changeLanguage("en")}>{enFlag}</MenuItem>
-        <MenuItem onClick={() => changeLanguage("nl")}>{nlFlag}</MenuItem>
+        <MenuItem onClick={() => changeStyle("en")}>{enFlag}</MenuItem>
+        <MenuItem onClick={() => changeStyle("nl")}>{nlFlag}</MenuItem>
       </Menu>
     </>
   );

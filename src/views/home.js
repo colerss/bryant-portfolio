@@ -1,6 +1,7 @@
 import React from 'react';
 import { Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const HomePage = () => {
   const rootStyle = {
@@ -39,15 +40,15 @@ const HomePage = () => {
     fontSize: '1rem',
     fontWeight: 'bold',
   };
-
+  const {t, i18n} = useTranslation();
   return (
     <div style={rootStyle}>
       <div style={contentStyle}>
         <Typography variant="h1" style={titleStyle}>
-          Welcome to the Portfolio of Bryant Suiskens
+          {t("Welcome Message")}
         </Typography>
         <Typography variant="h2" style={descriptionStyle}>
-          Front-end developer and application engineer
+          {t("Roles Message")}
         </Typography>
         <Button
           variant="contained"
@@ -56,7 +57,7 @@ const HomePage = () => {
           to={"/bryant-portfolio/aboutme"}
           style={buttonStyle}
         >
-          Get to know me
+         {t("Invitation Message")}
         </Button>
       </div>
     </div>

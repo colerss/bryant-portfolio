@@ -7,11 +7,13 @@ export default function ProjectEntry({
   from,
   to,
   children,
+  hidden
 }) {
   const { t, i18n } = useTranslation();
   return (
     <Box
       sx={{
+        display: hidden ? "none" : "block",
         margin: "1rem",
         backgroundColor: "primary.light",
         padding: "1rem",

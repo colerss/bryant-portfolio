@@ -9,15 +9,18 @@ const HomePage = lazy(() => import("../views/home"));
 
 export default function AppRoutes() {
   const location = useLocation();
+
+  //Necessary fix for a bug that causes i18n to lag on initialization
   useEffect(() => {
     if (location.pathname === "/") {
+      window.location.reload();
       window.location.href = "/bryant-portfolio/home";
     }
   }, [location.pathname]);
 
   return (
     <Routes>
-        <Route path="/bryant-portfolio/" exact  element={<HomePage />} />
+      <Route path="/bryant-portfolio/" exact  element={<HomePage />} />
       <Route path="/bryant-portfolio/home"  element={<HomePage />} />
       <Route path="/bryant-portfolio/aboutme" element={<AboutMePage />} />
       <Route path="/bryant-portfolio/journey" element={<JourneyPage />} />

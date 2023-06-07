@@ -23,6 +23,7 @@ export default function ProjectsPage() {
             title={"VGP RuleEngine"}
             from="February 2023"
             to="July 2023"
+            hidden
           >
               <p>{t("RuleEngine Project Description 1")}</p>
               <p>{t("RuleEngine Project Description 2")}</p>
@@ -43,6 +44,7 @@ export default function ProjectsPage() {
               <p>{t("SalesForce Deloitte Project Description 1")}</p>
           </ProjectEntry>
              <ProjectEntry
+             hidden
             title={"M-Files Webportal"}
             from="March 2021"
             to="June 2021"

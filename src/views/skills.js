@@ -32,90 +32,90 @@ export default function SkillsPage() {
             <TabPanel value={value} index={0}>
               <SkillEntry
                 title={"Javascript React"}
-                skillLevel={"Specialization"}
+                skillLevel={t("Specialist")}
               >
                {t("React Experience")}
               </SkillEntry>
               <SkillEntry
-                title={".NET development in C#"}
-                skillLevel={"Former Specialization"}
+                title={t(".NET Development in C#")}
+                skillLevel={t("Former Specialist")}
               >
                {t("DotNet Experience")}
               </SkillEntry>
-              <SkillEntry title={"SQLDb Management"} skillLevel={"Experienced"}>
+              <SkillEntry title={"SQLDb Management"} skillLevel={t("Experienced")}>
                {t("SQLDb Experience")}
               </SkillEntry>
-              <SkillEntry title={"Java"} skillLevel={"Moderate"}>
+              <SkillEntry title={"Java"} skillLevel={t("Moderate")}>
                 {t("Java Experience")}
               </SkillEntry>
-              <SkillEntry title={"Angular"} skillLevel={"Moderate"}>
+              <SkillEntry title={"Angular"} skillLevel={t("Moderate")}>
                 {t("Angular Experience")}
               </SkillEntry>
-              <SkillEntry title={"Python"} skillLevel={"Moderate"}>
+              <SkillEntry title={"Python"} skillLevel={t("Moderate")}>
                {t("Python Experience")}
               </SkillEntry>
-              <SkillEntry title={"Php"} skillLevel={"Moderate"}>
+              <SkillEntry title={"Php"} skillLevel={t("Moderate")}>
               {t("PHP Experience")}
               </SkillEntry>
-              <SkillEntry title={"Vue"} skillLevel={"Beginner"}>
+              <SkillEntry title={"Vue"} skillLevel={t("Beginner")}>
                {t("Vue Experience")} <a href=" https://openclassrooms.com/en/courses/5664336-create-a-web-application-with-vue-js">Course</a>
               </SkillEntry>
-              <SkillEntry title={"Dart with Flutter"} skillLevel={"Beginner"}>
+              <SkillEntry title={"Dart + Flutter"} skillLevel={t("Beginner")}>
               {t("Dart Experience")}
               </SkillEntry>
               <SkillEntry
                 title={".Net development in VB"}
-                skillLevel={"Deprecated"}
+                skillLevel={t("Deprecated")}
               >
                {t("VB Experience")}
               </SkillEntry>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <SkillEntry title={"IoT development"} skillLevel={"Experienced"}>
+              <SkillEntry title={t("IoT Development")} skillLevel={t("Experienced")}>
                 {t("IOT Experience")}
               </SkillEntry>
-              <SkillEntry title={"Git"} skillLevel={"Experienced"}>
+              <SkillEntry title={"Git"} skillLevel={t("Experienced")}>
                {t("Git Experience")}
               </SkillEntry>
-              <SkillEntry title={"Salesforce"} skillLevel={"Experienced"}>
+              <SkillEntry title={"Salesforce"} skillLevel={t("Experienced")}>
                 {t("SalesForce Experience")}
               </SkillEntry>
-              <SkillEntry title={"Cisco Networks"} skillLevel={"Moderate"}>
+              <SkillEntry title={t("Cisco Networks")} skillLevel={t("Moderate")}>
                 {t("Cisco Experience")}
               </SkillEntry>
-              <SkillEntry title={"AI Programming"} skillLevel={"Moderate"}>
+              <SkillEntry title={"AI Programming"} skillLevel={t("Moderate")}>
                 {t("AI Experience")}
               </SkillEntry>
-              <SkillEntry title={"DevOps"} skillLevel={"Moderate"}>
+              <SkillEntry title={"DevOps"} skillLevel={t("Moderate")}>
                 {t("DevOps Experience")}
               </SkillEntry>
-              <SkillEntry title={"Itil"} skillLevel={"Moderate"}>
+              <SkillEntry title={"Itil"} skillLevel={t("Moderate")}>
                {t("ITIL Experience")}
               </SkillEntry>
-              <SkillEntry title={"Electronics"} skillLevel={"Moderate"}>
+              <SkillEntry title={t("Electronics")} skillLevel={t("Moderate")}>
               {t("Electronics Experience")}
               </SkillEntry>
-              <SkillEntry title={"SAP"} skillLevel={"Beginner"}>
+              <SkillEntry title={"SAP"} skillLevel={t("Moderate")}>
                {t("SAP Experience")}
               </SkillEntry>
-              <SkillEntry title={"Drupal"} skillLevel={"Beginner"}>
+              <SkillEntry title={"Drupal"} skillLevel={t("Moderate")}>
                 {t("Drupal Experience")}
               </SkillEntry>
             </TabPanel>
             <TabPanel value={value} index={2}>
               <SkillEntry
                 title={"Project Management"}
-                skillLevel={"Experienced"}
+                skillLevel={t("Experienced")}
               >
                 {t("Project Management Experience")}
               </SkillEntry>
-              <SkillEntry title={"Agile Management"} skillLevel={"Experienced"}>
+              <SkillEntry title={"Agile Management"} skillLevel={t("Experienced")}>
                 {t("Agile Experience")}
               </SkillEntry>
-              <SkillEntry title={"Conversation Skills"} skillLevel={"Moderate"}>
+              <SkillEntry title={t("Conversation Skills")} skillLevel={t("Moderate")}>
                 {t("Conversation Experience")}
               </SkillEntry>
-              <SkillEntry title={"Training"} skillLevel={"Beginner"}>
+              <SkillEntry title={"Training"} skillLevel={t("Beginner")}>
                 {t("Training Experience")}
               </SkillEntry>
             </TabPanel>
