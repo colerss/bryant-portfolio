@@ -10,8 +10,6 @@ const HomePage = () => {
     justifyContent: 'center',
     alignItems: 'center',
     padding: '24px',
-    backgroundColor: '#2196f3',
-    color: '#ffffff',
   };
 
   const contentStyle = {
@@ -21,6 +19,7 @@ const HomePage = () => {
     alignItems: 'center',
     maxWidth: '600px',
     width: '100%',
+    
   };
 
   const titleStyle = {
@@ -28,26 +27,29 @@ const HomePage = () => {
     fontWeight: 'bold',
     marginBottom: '16px',
     textAlign: 'center',
+    color: 'text.background'
   };
 
   const descriptionStyle = {
     fontSize: '1.5rem',
     marginBottom: '32px',
     textAlign: 'center',
+    color: 'text.background'
   };
 
   const buttonStyle = {
     fontSize: '1rem',
     fontWeight: 'bold',
+    color: 'text.secondary'
   };
   const {t, i18n} = useTranslation();
   return (
     <div style={rootStyle}>
       <div style={contentStyle}>
-        <Typography variant="h1" style={titleStyle}>
+        <Typography variant="h1" sx={titleStyle}>
           {t("Welcome Message")}
         </Typography>
-        <Typography variant="h2" style={descriptionStyle}>
+        <Typography variant="h2" sx={descriptionStyle}>
           {t("Roles Message")}
         </Typography>
         <Button
@@ -55,7 +57,7 @@ const HomePage = () => {
           color="secondary"
           component={Link}
           to={"/bryant-portfolio/aboutme"}
-          style={buttonStyle}
+          sx={buttonStyle}
         >
          {t("Invitation Message")}
         </Button>

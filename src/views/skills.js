@@ -15,7 +15,7 @@ export default function SkillsPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box sx={{ margin: "1rem", backgroundColor: "primary.light",   padding: "1rem" }}>
+          <Box sx={{ margin: "1rem", backgroundColor: "primary.wrapper",   padding: "1rem" }}>
             <TitleBox title={"My Skills"}></TitleBox>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs

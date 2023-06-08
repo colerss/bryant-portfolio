@@ -15,7 +15,7 @@ export default function ProjectEntry({
       sx={{
         display: hidden ? "none" : "block",
         margin: "1rem",
-        backgroundColor: "primary.light",
+        backgroundColor: "primary.wrapper",
         padding: "1rem",
       }}
     >

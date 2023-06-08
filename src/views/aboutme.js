@@ -16,7 +16,7 @@ export default function AboutMePage() {
           <Box
             sx={{
               margin: "1rem",
-              backgroundColor: "primary.light",
+              backgroundColor: "primary.wrapper",
               padding: "1rem",
             }}
           >
@@ -34,11 +34,12 @@ export default function AboutMePage() {
                 />
               </Grid>
               <Grid item xs={9}>
+                {/** 
                 <Typography>Bryant Suiskens</Typography>
                 <Typography>
                   {t("Born")}: 1996, {t("October 15th")}
                 </Typography>
-                <br />
+                <br />*/}
                 <Typography>{t("Biography")}</Typography>
               </Grid>
               <Grid item xs={12}>
@@ -84,7 +85,7 @@ export default function AboutMePage() {
                   </IconButton>
                   <IconButton
                     component="a"
-                    href="https://github.com/colerss"
+                    href="https://www.linkedin.com/in/bryant-suiskens-69558b11b/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

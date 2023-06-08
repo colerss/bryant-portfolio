@@ -13,7 +13,7 @@ export default function ProjectsPage() {
           <Box
             sx={{
               margin: "1rem",
-              backgroundColor: "primary.light",
+              backgroundColor: "primary.wrapper",
               padding: "1rem",
             }}
           >

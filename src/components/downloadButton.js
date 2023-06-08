@@ -21,7 +21,7 @@ const DownloadButton = ({ fileType, link, fileName, downloadName, isPdf = false}
         alignItems: "center",
         textTransform: "none",
         "&:hover": {
-          backgroundColor: "primary.dark",
+          backgroundColor: "primary.main",
         },
       }}
     >
@@ -51,7 +51,7 @@ const DownloadButton = ({ fileType, link, fileName, downloadName, isPdf = false}
       <Typography
         variant="subtitle1"
         sx={{
-          color: "text.primary",
+          color: "text.menu",
           fontWeight: "bold",
           fontSize: 16,
         }}

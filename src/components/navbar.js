@@ -48,7 +48,7 @@ export default function PortfolioNavbar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "text.menu",
               textDecoration: "none",
             }}
           >
@@ -61,7 +61,7 @@ export default function PortfolioNavbar() {
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              color="text.menu"
             >
               <MenuIcon />
             </IconButton>
@@ -106,7 +106,7 @@ export default function PortfolioNavbar() {
               fontFamily: "monospace",
               fontWeight: 700,
               letterSpacing: ".3rem",
-              color: "inherit",
+              color: "text.menu",
               textDecoration: "none",
             }}
           >
@@ -119,14 +119,21 @@ export default function PortfolioNavbar() {
                 component={Link}
                 to={page.path}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "text.menu", display: "block" }}
               >
                 {t(page.name)}
               </Button>
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
-            <IconButton variant="outline" color="secondary">
+            <IconButton
+              variant="outline"
+              color="secondary"
+              component="a"
+              href="https://www.linkedin.com/in/bryant-suiskens-69558b11b/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <LinkedInIcon></LinkedInIcon>
             </IconButton>
           </Box>

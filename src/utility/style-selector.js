@@ -1,18 +1,16 @@
 import Flag from "react-world-flags";
 import { useTranslation } from "react-i18next";
 import { useState, useEffect } from "react";
-import { Button, Menu, MenuItem } from "@mui/material";
+import { Button, Menu, MenuItem, createTheme } from "@mui/material";
 
-export default function StyleSelector() {
+
+export default function StyleSelector({availableStyles, setSelectedStyle}) {
   const { t, i18n } = useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
-  const [selectedStyle, setSelectedStyle] = useState("");
-  const [renderedStyle, setRenderedStye] = useState("");
   const open = Boolean(anchorEl);
-
-  const changeStyle = (lng) => {
-    i18n.changeLanguage(lng);
-    setSelectedStyle(lng);
+  console.log(availableStyles)
+  const changeStyle = (style) => {
+    setSelectedStyle(availableStyles[style]);
     handleClose();
   };
 
@@ -24,38 +22,22 @@ export default function StyleSelector() {
     setAnchorEl(event.currentTarget);
   };
 
-
-  const enFlag = (
-    <Flag
-      code="GB"
-      alt="GB"
-      style={{ width: "1.8rem", height: "1.3rem" }}
-      className="align-middle"
-    />
-  );
-  const nlFlag = (
-    <Flag
-      code="NL"
-      alt="NL"
-      style={{ width: "1.8rem", height: "1.3rem" }}
-      className="align-middle"
-    />
-  );
-
   return (
     <>
       <Button
+        sx={{color: "text.menu"}}
         id="langselect"
         onClick={handleClick}
         aria-controls={open ? "demo-positioned-menu" : undefined}
         aria-haspopup="true"
         aria-expanded={open ? "true" : undefined}
       >
-        {renderedStyle}
+        {t("Change Style")}
       </Button>
       <Menu
         id="demo-positioned-menu"
         aria-labelledby="demo-positioned-button"
+        sx={{width: anchorEl?.width}}
         open={open}
         anchorEl={anchorEl}
         onClose={handleClose}
@@ -68,8 +50,9 @@ export default function StyleSelector() {
           horizontal: "left",
         }}
       >
-        <MenuItem onClick={() => changeStyle("en")}>{enFlag}</MenuItem>
-        <MenuItem onClick={() => changeStyle("nl")}>{nlFlag}</MenuItem>
+        {Object.keys(availableStyles).map((value)=>{
+          return <MenuItem sx={{color: "text.dark"}} key={value} onClick={()=> changeStyle(value)}>{value}</MenuItem>
+        })}
       </Menu>
     </>
   );

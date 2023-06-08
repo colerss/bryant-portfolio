@@ -1,8 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Typography, Box, Container, Grid } from "@mui/material";
 import LanguageSelector from "../utility/language-select";
+import StyleSelector from "../utility/style-selector";
+import { shadows } from '@mui/system';
 
-export default function Footer() {
+export default function Footer({availableStyles, setSelectedStyle}) {
+  console.log(availableStyles);
   return (
     <Box
       sx={{
@@ -24,10 +27,11 @@ export default function Footer() {
         }}
       >
         <div>
-          <Typography color="text.primary" fontSize={"0.5rem"}>
+          <Typography color="text.menu" fontSize={"0.5rem"}>
             &#169; 2023 Portfolio Bryant Suiskens
           </Typography>
         </div>
+        <StyleSelector availableStyles={availableStyles} setSelectedStyle={setSelectedStyle} />
         <LanguageSelector />
       </Container>
     </Box>
