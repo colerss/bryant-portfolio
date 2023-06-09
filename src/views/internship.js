@@ -31,8 +31,24 @@ export default function InternshipPage() {
                 onChange={handleChange}
                 aria-label="internship selector"
               >
-                <Tab label={t("Bachelor Internship") + " (2023)"} />
-                <Tab label={t("Graduate Internship") + " (2021)"} />
+                <Tab
+                  sx={{
+                    color: "text.default",
+                    "&.Mui-selected": {
+                      color: "text.default",
+                    },
+                  }}
+                  label={t("Bachelor Internship") + " (2023)"}
+                />
+                <Tab
+                  sx={{
+                    color: "text.default",
+                    "&.Mui-selected": {
+                      color: "text.default",
+                    },
+                  }}
+                  label={t("Graduate Internship") + " (2021)"}
+                />
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
@@ -71,9 +87,7 @@ export default function InternshipPage() {
                 <Typography>{t("SoftAdvice description 2")}</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Subtitle>
-                  {t("Assignment")}: M-Files Webportal
-                </Subtitle>
+                <Subtitle>{t("Assignment")}: M-Files Webportal</Subtitle>
                 <Typography>{t("MFiles Project Description 1")}</Typography>
                 <Typography>{t("MFiles Project Description 2")}</Typography>
               </Grid>

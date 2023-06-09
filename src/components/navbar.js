@@ -85,7 +85,8 @@ export default function PortfolioNavbar() {
             >
               {pages.map((page) => (
                 <MenuItem
-                  containerelement={<Link to={page.path} />}
+                  as={Link}
+                  to={page.path}
                   key={page.name}
                   onClick={handleCloseNavMenu}
                 >
