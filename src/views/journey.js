@@ -15,7 +15,13 @@ export default function JourneyPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box sx={{ margin: "1rem", backgroundColor: "primary.wrapper",   padding: "1rem" }}>
+          <Box
+            sx={{
+              margin: "1rem",
+              backgroundColor: "primary.wrapper",
+              padding: "1rem",
+            }}
+          >
             <TitleBox title={"Where I've Been"}></TitleBox>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
@@ -24,9 +30,33 @@ export default function JourneyPage() {
                 onChange={handleChange}
                 aria-label="internship selector"
               >
-                <Tab label={t("Educational Tracks")} />
-                <Tab label={t("Work Experience")} />
-                <Tab label={t("Certifications")} />
+                <Tab
+                  sx={{
+                    color: "text.default",
+                    "&.Mui-selected": {
+                      color: "text.default",
+                    },
+                  }}
+                  label={t("Educational Tracks")}
+                />
+                <Tab
+                  sx={{
+                    color: "text.default",
+                    "&.Mui-selected": {
+                      color: "text.default",
+                    },
+                  }}
+                  label={t("Work Experience")}
+                />
+                <Tab
+                  sx={{
+                    color: "text.default",
+                    "&.Mui-selected": {
+                      color: "text.default",
+                    },
+                  }}
+                  label={t("Certifications")}
+                />
               </Tabs>
             </Box>
             <TabPanel value={value} index={0}>
@@ -35,72 +65,71 @@ export default function JourneyPage() {
                 from={t("September") + " 2015"}
                 to={t("December") + " 2017"}
               >
-               {t("Bachelor AP")}
+                {t("Bachelor AP")}
               </TimeEntry>
               <TimeEntry
                 title={t("TM TP Bachelor")}
-                from={t("September")+ " 2018"}
+                from={t("September") + " 2018"}
                 to={t("May") + " 2019"}
               >
-               {t("Bachelor Psychology")}
+                {t("Bachelor Psychology")}
               </TimeEntry>
               <TimeEntry
                 title={t("TM IT Graduate")}
-                from={t("September")+ "2019"}
-                to={t("June")+ " 2021"}
+                from={t("September") + "2019"}
+                to={t("June") + " 2021"}
               >
                 {t("Graduate Programming")}
               </TimeEntry>
               <TimeEntry
                 title={t("TM IT Bachelor")}
-                from={t("September")+ " 2021"}
-                to={t("June")+ " 2023"}
+                from={t("September") + " 2021"}
+                to={t("June") + " 2023"}
               >
-               {t("Bachelor Programming")}
+                {t("Bachelor Programming")}
               </TimeEntry>
             </TabPanel>
             <TabPanel value={value} index={1}>
-              <TimeEntry
-                title={"Certiline"}
-                from={t("March")+ " 2015"}
-              >
+              <TimeEntry title={"Certiline"} from={t("March") + " 2015"}>
                 {t("Certiline")}
               </TimeEntry>
               <TimeEntry
                 title={t("Warehouse Assistant") + ", Almet"}
-                from={t("February")+ " 2018"}
-                to={t("May")+ " 2018"}
+                from={t("February") + " 2018"}
+                to={t("May") + " 2018"}
               >
                 {t("Almet")}
               </TimeEntry>
               <TimeEntry
                 title={"ASP.NET Programmer, SoftAdvice"}
-                from={t("February")+ " 2021"}
-                to={t("May")+ " 2021"}
+                from={t("February") + " 2021"}
+                to={t("May") + " 2021"}
               >
                 {t("SoftAdvice")}
               </TimeEntry>
               <TimeEntry
                 title={t("React Programmer") + ", VanGenechten"}
-                from={t("February")+ " 2023"}
-                to={t("May")+ " 2023"}
+                from={t("February") + " 2023"}
+                to={t("May") + " 2023"}
               >
                 {t("VanGenechten")}
               </TimeEntry>
             </TabPanel>
             <TabPanel value={value} index={2}>
-            <TimeEntry
+              <TimeEntry
                 title={"Unity Junior Developer"}
-                from={t("November")+ " 2020"}
+                from={t("November") + " 2020"}
               >
                 {t("Unity Junior")}
               </TimeEntry>
               <TimeEntry
                 title={"DRUPAL 10 & 9 TUTORIAL - Drupal Master Class"}
-                from={t("January")+ " 2023"}
+                from={t("January") + " 2023"}
               >
-               
-                {t("Drupal Certificate")} <a href="https://www.udemy.com/certificate/UC-77afa11f-49a6-49b9-9744-e2e36e914e4c/">Official Certificate</a>
+                {t("Drupal Certificate")}{" "}
+                <a href="https://www.udemy.com/certificate/UC-77afa11f-49a6-49b9-9744-e2e36e914e4c/">
+                  Official Certificate
+                </a>
               </TimeEntry>
             </TabPanel>
           </Box>
