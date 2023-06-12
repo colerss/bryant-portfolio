@@ -1,0 +1,30 @@
+.route-container {
+    position: relative;
+    height: 100%; /* Add this line to ensure the container takes up the full height */
+  }
+  
+  .route-container > div {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Adjust the duration and easing as desired */
+    height: 100%; /* Add this line to ensure the pages occupy the full height */
+    overflow: auto; /* Add this line to enable scrolling if needed */
+  }
+  
+  .route-container > div.route-enter {
+    opacity: 0;
+    z-index: 1; /* Add this line to ensure the entering page appears above the exiting page */
+  }
+  
+  .route-container > div.route-enter-active {
+    opacity: 1;
+  }
+  
+  .route-container > div.route-exit {
+    opacity: 1;
+  }
+  
+  .route-container > div.route-exit-active {
+    opacity: 0;
+  }

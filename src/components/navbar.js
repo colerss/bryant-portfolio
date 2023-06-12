@@ -12,6 +12,7 @@ import {
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useTranslation } from "react-i18next";
 
@@ -127,6 +128,9 @@ export default function PortfolioNavbar() {
             ))}
           </Box>
           <Box sx={{ flexGrow: 0 }}>
+            <Button variant="outlined" color="secondary"  target="_blank"  href="https://github.com/colerss/bryant-portfolio">
+              {t("Project Repository")}
+            </Button>
             <IconButton
               variant="outline"
               color="secondary"

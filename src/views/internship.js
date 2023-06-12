@@ -72,7 +72,7 @@ export default function InternshipPage() {
                     pathLimit={11}
                   ></ImageGallery>
                 </SimpleAccordion>
-                <SimpleAccordion title={"Other Proofs"}>
+                <SimpleAccordion title={"Bit.Dev"}>
                   <ImageGallery
                     quilted
                     path={"./images/vgpother"}
