@@ -1,32 +1,32 @@
 {
   "files": {
     "main.css": "/bryant-portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/bryant-portfolio/static/js/main.8fbe443d.js",
-    "static/js/402.694b0e60.chunk.js": "/bryant-portfolio/static/js/402.694b0e60.chunk.js",
-    "static/js/310.533ad231.chunk.js": "/bryant-portfolio/static/js/310.533ad231.chunk.js",
-    "static/js/276.9f9f182c.chunk.js": "/bryant-portfolio/static/js/276.9f9f182c.chunk.js",
+    "main.js": "/bryant-portfolio/static/js/main.b1167a8d.js",
+    "static/js/402.2d0eedb1.chunk.js": "/bryant-portfolio/static/js/402.2d0eedb1.chunk.js",
+    "static/js/16.52ff608c.chunk.js": "/bryant-portfolio/static/js/16.52ff608c.chunk.js",
+    "static/js/276.1f842697.chunk.js": "/bryant-portfolio/static/js/276.1f842697.chunk.js",
     "static/js/830.aea041ba.chunk.js": "/bryant-portfolio/static/js/830.aea041ba.chunk.js",
     "static/js/827.1a861ffe.chunk.js": "/bryant-portfolio/static/js/827.1a861ffe.chunk.js",
-    "static/js/637.4268e3cb.chunk.js": "/bryant-portfolio/static/js/637.4268e3cb.chunk.js",
+    "static/js/637.e63eac1a.chunk.js": "/bryant-portfolio/static/js/637.e63eac1a.chunk.js",
     "static/js/787.07513a26.chunk.js": "/bryant-portfolio/static/js/787.07513a26.chunk.js",
     "static/js/889.eb006c1b.chunk.js": "/bryant-portfolio/static/js/889.eb006c1b.chunk.js",
     "static/js/609.cb359b86.chunk.js": "/bryant-portfolio/static/js/609.cb359b86.chunk.js",
     "index.html": "/bryant-portfolio/index.html",
     "static/media/getFetch.cjs": "/bryant-portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.e6c13ad2.css.map": "/bryant-portfolio/static/css/main.e6c13ad2.css.map",
-    "main.8fbe443d.js.map": "/bryant-portfolio/static/js/main.8fbe443d.js.map",
-    "402.694b0e60.chunk.js.map": "/bryant-portfolio/static/js/402.694b0e60.chunk.js.map",
-    "310.533ad231.chunk.js.map": "/bryant-portfolio/static/js/310.533ad231.chunk.js.map",
-    "276.9f9f182c.chunk.js.map": "/bryant-portfolio/static/js/276.9f9f182c.chunk.js.map",
+    "main.b1167a8d.js.map": "/bryant-portfolio/static/js/main.b1167a8d.js.map",
+    "402.2d0eedb1.chunk.js.map": "/bryant-portfolio/static/js/402.2d0eedb1.chunk.js.map",
+    "16.52ff608c.chunk.js.map": "/bryant-portfolio/static/js/16.52ff608c.chunk.js.map",
+    "276.1f842697.chunk.js.map": "/bryant-portfolio/static/js/276.1f842697.chunk.js.map",
     "830.aea041ba.chunk.js.map": "/bryant-portfolio/static/js/830.aea041ba.chunk.js.map",
     "827.1a861ffe.chunk.js.map": "/bryant-portfolio/static/js/827.1a861ffe.chunk.js.map",
-    "637.4268e3cb.chunk.js.map": "/bryant-portfolio/static/js/637.4268e3cb.chunk.js.map",
+    "637.e63eac1a.chunk.js.map": "/bryant-portfolio/static/js/637.e63eac1a.chunk.js.map",
     "787.07513a26.chunk.js.map": "/bryant-portfolio/static/js/787.07513a26.chunk.js.map",
     "889.eb006c1b.chunk.js.map": "/bryant-portfolio/static/js/889.eb006c1b.chunk.js.map",
     "609.cb359b86.chunk.js.map": "/bryant-portfolio/static/js/609.cb359b86.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.8fbe443d.js"
+    "static/js/main.b1167a8d.js"
   ]
 }
