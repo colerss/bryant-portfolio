@@ -4,6 +4,7 @@ import TabPanel from "../components/tabPanel";
 import { useTranslation } from "react-i18next";
 import SkillEntry from "../components/skillEntry";
 import TitleBox from "../components/titleBox";
+import ContentWrapper from "../components/contentWrapper";
 export default function SkillsPage() {
   const [value, setValue] = React.useState(0);
   const { t, i18n } = useTranslation();
@@ -15,14 +16,8 @@ export default function SkillsPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box
-            sx={{
-              margin: "1rem",
-              backgroundColor: "primary.wrapper",
-              padding: "1rem",
-            }}
-          >
-            <TitleBox title={"My Skills"}></TitleBox>
+          <TitleBox title={"My Skills"}></TitleBox>
+          <ContentWrapper>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 centered
@@ -167,7 +162,7 @@ export default function SkillsPage() {
                 {t("Training Experience")}
               </SkillEntry>
             </TabPanel>
-          </Box>
+          </ContentWrapper>
         </Grid>
         <Grid item xs={0} md={2}></Grid>
       </Grid>

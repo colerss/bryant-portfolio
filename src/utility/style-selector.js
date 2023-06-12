@@ -8,7 +8,6 @@ export default function StyleSelector({availableStyles, setSelectedStyle}) {
   const { t, i18n } = useTranslation();
   const [anchorEl, setAnchorEl] = useState(null);
   const open = Boolean(anchorEl);
-  console.log(availableStyles)
   const changeStyle = (style) => {
     setSelectedStyle(availableStyles[style]);
     handleClose();

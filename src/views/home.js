@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
@@ -10,8 +10,9 @@ const HomePage = () => {
     justifyContent: 'center',
     alignItems: 'center',
     padding: '24px',
+    opacity: 0,
+    transition: "opacity 0.5s ease-in-out",
   };
-
   const contentStyle = {
     display: 'flex',
     flexDirection: 'column',
@@ -42,9 +43,15 @@ const HomePage = () => {
     fontWeight: 'bold',
     color: 'text.secondary'
   };
+  useEffect(() => {
+    const rootElement = document.getElementById('homewrapper');
+    if (rootElement) {
+      rootElement.style.opacity = '1';
+    }
+  }, []);
   const {t, i18n} = useTranslation();
   return (
-    <div style={rootStyle}>
+    <div id={"homewrapper"} style={rootStyle}>
       <div style={contentStyle}>
         <Typography variant="h1" sx={titleStyle}>
           {t("Welcome Message")}

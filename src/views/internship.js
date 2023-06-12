@@ -5,6 +5,10 @@ import { useTranslation } from "react-i18next";
 import TitleBox from "../components/titleBox";
 import DownloadButton from "../components/downloadButton";
 import Subtitle from "../components/subtitle";
+import ContentWrapper from "../components/contentWrapper";
+import SimpleAccordion from "../components/accordion";
+import ImageGallery from "../components/imageGallery";
+
 export default function InternshipPage() {
   const [value, setValue] = React.useState(0);
   const { t, i18n } = useTranslation();
@@ -16,14 +20,8 @@ export default function InternshipPage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box
-            sx={{
-              margin: "1rem",
-              backgroundColor: "primary.wrapper",
-              padding: "1rem",
-            }}
-          >
-            <TitleBox title={"Internships"}></TitleBox>
+          <TitleBox title={"Internships"}></TitleBox>
+          <ContentWrapper>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
               <Tabs
                 centered
@@ -63,6 +61,26 @@ export default function InternshipPage() {
                 <Typography>{t("RuleEngine Project Description 1")}</Typography>
                 <Typography>{t("RuleEngine Project Description 2")}</Typography>
               </Grid>
+              <Grid item xd={12}>
+                <Subtitle>{t("Proofs")}:</Subtitle>
+
+                <SimpleAccordion title={"RuleEngine"}>
+                  <ImageGallery
+                    quilted
+                    path={"./images/vgpnew"}
+                    rowHeight={100}
+                    pathLimit={11}
+                  ></ImageGallery>
+                </SimpleAccordion>
+                <SimpleAccordion title={"Other Proofs"}>
+                  <ImageGallery
+                    quilted
+                    path={"./images/vgpother"}
+                    rowHeight={100}
+                    pathLimit={10}
+                  ></ImageGallery>
+                </SimpleAccordion>
+              </Grid>
               <Grid item xs={12}>
                 <Subtitle>{t("Relevant Documents")}</Subtitle>
                 <DownloadButton
@@ -91,6 +109,18 @@ export default function InternshipPage() {
                 <Typography>{t("MFiles Project Description 1")}</Typography>
                 <Typography>{t("MFiles Project Description 2")}</Typography>
               </Grid>
+              <Grid item xd={12}>
+                <Subtitle>{t("Proofs")}:</Subtitle>
+
+                <SimpleAccordion title={"MFiles Webportal"}>
+                  <ImageGallery
+                    quilted
+                    path={"./images/mfiles"}
+                    rowHeight={100}
+                    pathLimit={3}
+                  ></ImageGallery>
+                </SimpleAccordion>
+              </Grid>
               <Grid item xs={12}>
                 <Subtitle> {t("Relevant Documents")}</Subtitle>
                 <DownloadButton
@@ -102,7 +132,7 @@ export default function InternshipPage() {
                 />
               </Grid>
             </TabPanel>
-          </Box>
+          </ContentWrapper>
         </Grid>
         <Grid item xs={0} md={2}></Grid>
       </Grid>

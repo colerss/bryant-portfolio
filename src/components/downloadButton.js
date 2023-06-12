@@ -16,6 +16,7 @@ const DownloadButton = ({ fileType, link, fileName, downloadName, isPdf = false}
       href={isPdf ? null : link}
       download={isPdf ? null : downloadName}
       sx={{
+        backgroundColor: "secondary.main",
         margin: "0.5rem",
         display: "inline-flex",
         alignItems: "center",

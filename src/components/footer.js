@@ -15,6 +15,7 @@ export default function Footer({availableStyles, setSelectedStyle}) {
         paddingTop: "1rem",
         paddingBottom: "1rem",
         marginTop: "auto",
+        boxShadow: "0 0 8px rgba(0, 0, 0, 0.3)"
       }}
       component="footer"
     >

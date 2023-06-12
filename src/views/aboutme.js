@@ -6,6 +6,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import TitleBox from "../components/titleBox";
 import DownloadButton from "../components/downloadButton";
 import Subtitle from "../components/subtitle";
+import ContentWrapper from "../components/contentWrapper";
+import ImageGallery from "../components/imageGallery";
+
 export default function AboutMePage() {
   const { t, i18n } = useTranslation();
   return (
@@ -13,33 +16,28 @@ export default function AboutMePage() {
       <Grid container spacing={1}>
         <Grid item xs={0} md={2}></Grid>
         <Grid item xs={12} md={8}>
-          <Box
-            sx={{
-              margin: "1rem",
-              backgroundColor: "primary.wrapper",
-              padding: "1rem",
-            }}
-          >
+          <TitleBox title={"About Me"}></TitleBox>
+          <ContentWrapper>
             <Grid container spacing={2}>
-              <TitleBox title={"About Me"}></TitleBox>
-              <Grid item xs={3}>
+              <Grid item xs={12} md={3}>
                 <img
                   src="./images/profile.jpg"
                   alt="Bryant Suiskens"
                   style={{
-                    borderRadius: "0%",
+                    borderRadius: "100%",
                     objectFit: "contain",
                     maxWidth: "100%",
+                    clipPath: "circle(100% at 50% 30%)",
+                    opacity: 0,
+                    transition: "opacity 0.5s ease-in-out",
+                    boxShadow: "0 0 10px 5px rgba(0, 0, 0, 0.2)",
+                  }}
+                  onLoad={(e) => {
+                    e.target.style.opacity = 1;
                   }}
                 />
               </Grid>
-              <Grid item xs={9}>
-                {/** 
-                <Typography>Bryant Suiskens</Typography>
-                <Typography>
-                  {t("Born")}: 1996, {t("October 15th")}
-                </Typography>
-                <br />*/}
+              <Grid item xs={12}md={9}>
                 <Typography>{t("Biography")}</Typography>
               </Grid>
               <Grid item xs={12}>
@@ -94,7 +92,7 @@ export default function AboutMePage() {
                 </div>
               </Grid>
             </Grid>
-          </Box>
+          </ContentWrapper>
         </Grid>
         <Grid item xs={0} md={2}></Grid>
       </Grid>
