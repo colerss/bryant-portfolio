@@ -69,7 +69,7 @@ export default function InternshipPage() {
                     quilted
                     path={"./images/vgpnew"}
                     rowHeight={100}
-                    pathLimit={11}
+                    pathLimit={10}
                   ></ImageGallery>
                 </SimpleAccordion>
                 <SimpleAccordion title={"Bit.Dev"}>
