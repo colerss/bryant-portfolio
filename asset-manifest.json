@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/bryant-portfolio/static/css/main.e6c13ad2.css",
-    "main.js": "/bryant-portfolio/static/js/main.7e18f29b.js",
-    "static/js/402.2d0eedb1.chunk.js": "/bryant-portfolio/static/js/402.2d0eedb1.chunk.js",
-    "static/js/16.8dc52c26.chunk.js": "/bryant-portfolio/static/js/16.8dc52c26.chunk.js",
-    "static/js/276.1f842697.chunk.js": "/bryant-portfolio/static/js/276.1f842697.chunk.js",
+    "main.js": "/bryant-portfolio/static/js/main.ce0a137c.js",
+    "static/js/402.4390d04c.chunk.js": "/bryant-portfolio/static/js/402.4390d04c.chunk.js",
+    "static/js/16.37e14863.chunk.js": "/bryant-portfolio/static/js/16.37e14863.chunk.js",
+    "static/js/276.7d5e8ed8.chunk.js": "/bryant-portfolio/static/js/276.7d5e8ed8.chunk.js",
     "static/js/830.aea041ba.chunk.js": "/bryant-portfolio/static/js/830.aea041ba.chunk.js",
     "static/js/827.c355ca6a.chunk.js": "/bryant-portfolio/static/js/827.c355ca6a.chunk.js",
     "static/js/637.e63eac1a.chunk.js": "/bryant-portfolio/static/js/637.e63eac1a.chunk.js",
@@ -14,10 +14,10 @@
     "index.html": "/bryant-portfolio/index.html",
     "static/media/getFetch.cjs": "/bryant-portfolio/static/media/getFetch.40f37ddea2378391108f.cjs",
     "main.e6c13ad2.css.map": "/bryant-portfolio/static/css/main.e6c13ad2.css.map",
-    "main.7e18f29b.js.map": "/bryant-portfolio/static/js/main.7e18f29b.js.map",
-    "402.2d0eedb1.chunk.js.map": "/bryant-portfolio/static/js/402.2d0eedb1.chunk.js.map",
-    "16.8dc52c26.chunk.js.map": "/bryant-portfolio/static/js/16.8dc52c26.chunk.js.map",
-    "276.1f842697.chunk.js.map": "/bryant-portfolio/static/js/276.1f842697.chunk.js.map",
+    "main.ce0a137c.js.map": "/bryant-portfolio/static/js/main.ce0a137c.js.map",
+    "402.4390d04c.chunk.js.map": "/bryant-portfolio/static/js/402.4390d04c.chunk.js.map",
+    "16.37e14863.chunk.js.map": "/bryant-portfolio/static/js/16.37e14863.chunk.js.map",
+    "276.7d5e8ed8.chunk.js.map": "/bryant-portfolio/static/js/276.7d5e8ed8.chunk.js.map",
     "830.aea041ba.chunk.js.map": "/bryant-portfolio/static/js/830.aea041ba.chunk.js.map",
     "827.c355ca6a.chunk.js.map": "/bryant-portfolio/static/js/827.c355ca6a.chunk.js.map",
     "637.e63eac1a.chunk.js.map": "/bryant-portfolio/static/js/637.e63eac1a.chunk.js.map",
@@ -27,6 +27,6 @@
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.7e18f29b.js"
+    "static/js/main.ce0a137c.js"
   ]
 }
