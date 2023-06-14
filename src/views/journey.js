@@ -107,7 +107,7 @@ export default function JourneyPage() {
                 from={t("February") + " 2023"}
                 to={t("May") + " 2023"}
               >
-                {t("Van Genechten Packaging")}
+                {t("VanGenechten")}
               </TimeEntry>
             </TabPanel>
             <TabPanel value={value} index={2}>
