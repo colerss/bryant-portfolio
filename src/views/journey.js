@@ -103,11 +103,11 @@ export default function JourneyPage() {
                 {t("SoftAdvice")}
               </TimeEntry>
               <TimeEntry
-                title={t("React Programmer") + ", VanGenechten"}
+                title={t("React Programmer") + ", Van Genechten Packaging"}
                 from={t("February") + " 2023"}
                 to={t("May") + " 2023"}
               >
-                {t("VanGenechten")}
+                {t("Van Genechten Packaging")}
               </TimeEntry>
             </TabPanel>
             <TabPanel value={value} index={2}>

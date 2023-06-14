@@ -51,7 +51,7 @@ export default function InternshipPage() {
             </Box>
             <TabPanel value={value} index={0}>
               <Grid item xs={12}>
-                <Subtitle> {t("Internship")}: VanGenechten Packaging</Subtitle>
+                <Subtitle> {t("Internship")}: Van Genechten Packaging</Subtitle>
                 <Typography>{t("VGP description 1")}</Typography>
                 <Typography>{t("VGP description 2")}</Typography>
                 <Typography>{t("VGP description 3")}</Typography>
